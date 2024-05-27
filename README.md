@@ -25,9 +25,27 @@ Download and install required software as described in the exercise pdf.
 
 Download data:
 
-    ./download_iwslt_2017_data.sh
+    ./scripts/download_iwslt_2017_data.sh
     
 Before executing any further steps, you need to make the modifications described in the exercise pdf.
+
+Take 100,000 samples from training data:
+	
+	sampling_data.py
+
+Preprocessing for bpe models:
+	
+	./scripts/prepare_bpe.sh
+
+Edit configs files for 3 models: 
+	
+	transformer_word_level_config.yaml
+	transformer_bpe_2000_config.yaml
+	transformer_bpe_3000_config.yaml
+
+Modify the train.sh according to apply the modele configs files respectively: 
+
+   eg. model_name, path_to_data, etc. 
 
 Train a model:
 
