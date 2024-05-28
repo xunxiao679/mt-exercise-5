@@ -1,0 +1,28 @@
+###############################################################################
+model_name transformer_bpe_3000_config
+2024-05-28 01:12:55,326 - INFO - root - Hello! This is Joey-NMT (version 2.2.0).
+2024-05-28 01:12:55,385 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-28 01:12:55,425 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-28 01:12:55,457 - INFO - joeynmt.helpers - Load model from /Users/sasa/Documents/Machine_Translation/exercise/mt-exercise-5/models/bpe_3000/65500.ckpt.
+2024-05-28 01:12:55,463 - INFO - joeynmt.tokenizers - it tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-28 01:12:55,463 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, -1), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-28 01:12:55,465 - WARNING - joeynmt.helpers - `alpha` option is obsolete. Please use `beam_alpha`, instead.
+2024-05-28 01:12:55,465 - INFO - joeynmt.prediction - Predicting 1566 example(s)... (Beam search with beam_size=9, beam_alpha=1.0, n_best=1, min_output_length=1, max_output_length=-1, return_prob='none', generate_unk=True, repetition_penalty=-1, no_repeat_ngram_size=-1)
+2024-05-28 01:24:44,250 - INFO - joeynmt.prediction - Generation took 708.7733[sec]. (No references given)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with the `force` parameter.
+{
+ "name": "BLEU",
+ "score": 40.3,
+ "signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.4.2",
+ "verbose_score": "70.1/50.5/35.0/28.4 (BP = 0.931 ratio = 0.933 hyp_len = 68369 ref_len = 73288)",
+ "nrefs": "1",
+ "case": "mixed",
+ "eff": "no",
+ "tok": "13a",
+ "smooth": "exp",
+ "version": "2.4.2"
+}
+time taken:
+710 seconds
