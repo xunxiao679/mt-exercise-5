@@ -1,0 +1,9 @@
+log_file,beam_size,bleu_score,time_taken
+beam_size_2.txt,2,40.0,128.0
+beam_size_3.txt,3,40.3,220.0
+beam_size_4.txt,4,40.6,320.0
+beam_size_5.txt,5,40.7,437.0
+beam_size_6.txt,6,40.6,511.0
+beam_size_7.txt,7,40.4,577.0
+beam_size_9.txt,9,40.3,710.0
+beam_size_10.txt,10,40.3,808.0
